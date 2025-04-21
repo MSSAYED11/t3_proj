@@ -1,0 +1,79 @@
+@keyframes dot-typing {
+  0% {
+    box-shadow: 9984px 0 0 0 #8b5cf6, 9999px 0 0 0 #8b5cf6, 10014px 0 0 0 #8b5cf6;
+  }
+  16.667% {
+    box-shadow: 9984px -10px 0 0 #8b5cf6, 9999px 0 0 0 #8b5cf6, 10014px 0 0 0 #8b5cf6;
+  }
+  33.333% {
+    box-shadow: 9984px 0 0 0 #8b5cf6, 9999px 0 0 0 #8b5cf6, 10014px 0 0 0 #8b5cf6;
+  }
+  50% {
+    box-shadow: 9984px 0 0 0 #8b5cf6, 9999px -10px 0 0 #8b5cf6, 10014px 0 0 0 #8b5cf6;
+  }
+  66.667% {
+    box-shadow: 9984px 0 0 0 #8b5cf6, 9999px 0 0 0 #8b5cf6, 10014px 0 0 0 #8b5cf6;
+  }
+  83.333% {
+    box-shadow: 9984px 0 0 0 #8b5cf6, 9999px 0 0 0 #8b5cf6, 10014px -10px 0 0 #8b5cf6;
+  }
+  100% {
+    box-shadow: 9984px 0 0 0 #8b5cf6, 9999px 0 0 0 #8b5cf6, 10014px 0 0 0 #8b5cf6;
+  }
+}
+
+.dot-typing {
+  position: relative;
+  left: -9999px;
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #8b5cf6;
+  color: #8b5cf6;
+  box-shadow: 9984px 0 0 0 #8b5cf6, 9999px 0 0 0 #8b5cf6, 10014px 0 0 0 #8b5cf6;
+  animation: dot-typing 1.5s infinite linear;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+/* Improve the scrollbar appearance */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #9333ea, #ec4899);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #7e22ce, #db2777);
+}
+
+/* Title update */
+head title[data-default] {
+  display: none;
+}
+
+head::before {
+  content: 'JokeTeller - Your Daily Dose of Humor';
+  display: block;
+}
